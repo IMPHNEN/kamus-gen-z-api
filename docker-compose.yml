@@ -1,0 +1,12 @@
+services:
+  app:
+   build: .
+   ports:
+    - '3000:3000'
+   restart: unless-stopped
+   environment:
+     JWT_SECRET: NAKANO_ITSUKI
+   volumes:
+    - sqlite_data:/app/db
+volumes:
+  sqlite_data:

@@ -55,6 +55,16 @@ npx prisma migrate dev --name init
 yarn dev
 ```
 
+Atau pake docker
+
+```bash
+# jalankan
+docker compose up -d
+
+# untuk mematikan
+docker compose down
+```
+
 buka API Documentation
 [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
 
